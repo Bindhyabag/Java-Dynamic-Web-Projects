@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> Online Education Webpage</title>
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <section class="flex">
+
+      <a href="index.html" class="logo">edu....</a>
+
+      <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="courses.html">courses</a>
+        <a href="teachers.html">teachers</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="logout.html"> Logout</a>
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+   </section>
+
+</header>
+<!-- contact section starts  -->
+
+<section class="contact" id="contact" style="margin-top: 60px;">
+
+   <h1 class="heading"><span>contact</span> us</h1>
+
+   <div class="row">
+
+      <div class="image">
+         <img src="images/contact-img.svg" alt="">
+      </div>
+
+      <form action="" method="post">
+         <span>your name</span>
+         <input type="text" required placeholder="enter your full name" maxlength="50" name="name" class="box">
+         <span>your email</span>
+         <input type="email" required placeholder="enter your valie email" maxlength="50" name="email" class="box">
+         <span>your number</span>
+         <input type="number" required placeholder="enter your valie number" max="9999999999" min="0" name="number" class="box" onkeypress="if(this.value.length == 10) return false;">
+         <span>select course</span>
+         <select name="couses" class="box" required>
+            <option value="" disabled selected>select the course --</option>
+            <option value="web developement">web developement</option>
+            <option value="science and biology">science and biology</option>
+            <option value="engineering">engineering</option>
+            <option value="digital marketing">digital marketing</option>
+            <option value="graphic design">graphic design</option>
+            
+         </select>
+         <span>select gender</span>
+         <div class="radio">
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">male</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">female</label>
+         </div>
+         <input type="submit" value="send message" class="btn" name="send">
+      </form>
+
+   </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<footer class="footer">
+
+    <section>
+ 
+       <div class="share">
+          <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+          <a href="https://twitter.com/" class="fab fa-twitter"></a>
+          <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+          <a href="https://www.instagram.com" class="fab fa-instagram"></a>
+          <a href="https://www.youtube.com/" class="fab fa-youtube"></a>
+       </div>
+ 
+       <div class="credit">&copy; copyright @ 2022  </div>
+ 
+    </section>
+ 
+ </footer>
+
+<!-- footer section ends -->
+<!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
